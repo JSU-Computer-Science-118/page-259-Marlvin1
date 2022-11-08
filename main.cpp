@@ -12,7 +12,8 @@ int main()
     int root1;
     int root2;
     double discriminant;
-    
+    cout << "Enter the value of a,b,c: ";
+    cin >> a>>b>>c;
   
     discriminant = pow(b,2) - 4 * a * c;
     root1 = (-b + sqrt(discriminant))/(2 * a);
