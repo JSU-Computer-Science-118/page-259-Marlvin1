@@ -26,8 +26,8 @@ int main()
     
     else if(discriminant > 0){
         cout << "Two real roots\n";
-        cout <<"-First root "  << root1 << "\n";
-        cout <<"-Second root " << root2 << "\n";
+        cout <<"- First root "  << root1 << "\n";
+        cout <<"- Second root " << root2 << "\n";
     }
     
     else if (discriminant < 0){
