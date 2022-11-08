@@ -1,35 +1,40 @@
-// wri// Marlvin Goremusandu                     J00975960
-// Number 7                 Page 259        roots
-#include<iostream>
-#include<iomanip>
-#include<cmath>
+//Marlvin Goremusandu    J00975960
+// Page 259 qn 7
+
+#include <iostream>
+#include <cmath>
 
 using namespace std;
-int main(){
-    
-    cout<<"Good Day user\n";
+
+int main()
+{
     double a,b,c;
-    cout<<"Enter the value of a,b,c in your equation: "<<endl;
-    cin>>a>>b>>c;
-    if(pow(b,2)-4*(a*c)==0)
-    {
-        cout<<"The equation has one(1) real root\n";
-    }
-    else if (pow(b, 2)-4*(a*c)>0){
-        cout<<"The equation has two(2) real roots\n";
-    }
-    else if (pow(b, 2)-4*(a*c)<0){
-        cout<<"The equation has complex roots\n";
-    }
-    double root1=(-b+sqrt(pow(b,2)-4*(a*c)))/2*a;
-    double root2=(-b-sqrt(pow(b,2)-4*(a*c)))/2*a;
+    int root1;
+    int root2;
+    double discriminant;
     
-  if (pow(b, 2)-4*(a*c)>=0)
-    {
-        cout<<"The roots of the equation are "<<root1<<" and "<<root2<<endl;
-        
+    cout << "Enter the value of a,b,c";
+    cin >> a>>b>>c;
+    
+    discriminant = pow(b,2) - 4 * a * c;
+    root1 = (-b + sqrt(discriminant))/(2 * a);
+    root2 = (-b - sqrt(discriminant))/(2 * a);
+
+    if (discriminant == 0){
+        cout << "The root is one  real root\n";
+        cout << "The roots of the equation are " << root1 << "\n";
     }
-    return 0;
+      
+    else if(discriminant > 0){
+      cout << "There are two real roots\n";
+      cout << "the roots of the equation are " << root1 << ", " << root2 << "\n";
+    }
+      
+    else if (discriminant < 0){
+        cout << "The roots are complex\n";
+    }
+
+return 0;
 }
 
 
