@@ -21,7 +21,7 @@ int main()
     root2 = (-b - sqrt(discriminant))/(2 * a);
     
     if (discriminant == 0){
-        cout << "The single root is "<<root1<<endl;
+        cout << " The single root is -1"<<root1<<endl;
     }
     
     else if(discriminant > 0){
@@ -31,7 +31,7 @@ int main()
     }
     
     else if (discriminant < 0){
-        cout << "Complex roots\n";
+        cout << " Complex roots\n";
     }
     
     return 0;
