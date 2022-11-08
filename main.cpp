@@ -19,22 +19,22 @@ int main()
     discriminant = pow(b,2) - 4 * a * c;
     root1 = (-b + sqrt(discriminant))/(2 * a);
     root2 = (-b - sqrt(discriminant))/(2 * a);
-
+    
     if (discriminant == 0){
-        cout << "The root is one  real root\n";
-        cout << "The roots of the equation are " << root1 << "\n";
+        cout << "The single root is "<<root1<<endl;
     }
-      
+    
     else if(discriminant > 0){
-      cout << "There are two real roots\n";
-      cout << "the roots of the equation are " << root1 << ", " << root2 << "\n";
+        cout << "Two real roots\n";
+        cout <<" First root "  << root1 << "\n";
+        cout <<" Second root " << root2 << "\n";
     }
-      
+    
     else if (discriminant < 0){
-        cout << "The roots are complex\n";
+        cout << "Complex roots\n";
     }
-
-return 0;
+    
+    return 0;
+    
 }
-
 
